@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+// Color Palette
+
+$black: #000000;
+$white: #ffffff;
+$yellow-main: #e1f745;
+$yellow-faded: #c1d338;
+$ice-blue-contrast: #43b5a8;
+$ice-blue-main: #cbe8ea;
+$ice-blue-hover: #a2dcdf;
+$red-main: #fa554f;
+$purple-main: #9088f1;
+$purple-light: #ada6f8;
+$purple-dark: #766cdf;
+$blue-main: #038ad8;
+$orange-main: #f77e47;
+$orange-dark: #cc5d2a;
+$dark-main: #222222;
+$dark-faded: #272727;
+$dark-hover: #2c2c2c;
+$dark-light: #313131;
+$gray-main: #888888;
+$gray-faded: #e0e0e0;
+$gray-dark: #5f5f5f;
+
+
+
+// Misc & Other
+
+$border-rad-xxs: 0.25rem;
+$border-rad-xs: 0.5rem;
+$border-rad-sm: 1rem;
+$border-rad-md: 1.5rem;
+$border-rad-lg: 2rem;
+$border-rad-xl: 3rem;
+$border-rad-xxl: 4rem;
+
+
+
+// Default Styles
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    color: $white;
+}
+
+body {
+    background-color: $dark-main;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    color: $white;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+// Mixins
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
