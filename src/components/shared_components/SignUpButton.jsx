@@ -11,9 +11,9 @@ const SignUpButton = () => {
 
 
     return (
-        !isAuthenticated && 
+        !isAuthenticated &&
         (<button
-            className={`${styles.loginButton} ${styles.authButton}`}
+            className={`${styles.signUpButton} ${styles.authButton}`}
             onClick={() => loginWithRedirect({
                 authorizationParams: {
                     screen_hint: "signup"
